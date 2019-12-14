@@ -53,7 +53,7 @@ def main():
 
         '''Website name'''
         buf = fd.readline()
-        if buf == 'Applications\r\n':
+        if buf == 'Applications\r\n' or  buf == 'Notes\r\n' or buf == '':
            break
         args.append(buf[14:-2])
 
@@ -97,7 +97,7 @@ def main():
         '''aplication name'''
         buf = fd.readline()
 
-        if buf == 'Notes\r\n':
+        if buf == 'Notes\r\n' or buf == '':
             break
 
         args.append(buf[13:-2])
