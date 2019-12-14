@@ -1,4 +1,5 @@
 import codecs
+from argparse import ArgumentParser
 
 
 class Websites:
@@ -32,7 +33,20 @@ class Note:
 
 
 def main():
-    file = 'Karsp.txt'
+    
+    argsParser = ArgumentParser(description='Kaspersky Password Manager conveter to CSV')
+    argsParser.add_argument('-i', '--input_file', help='Kaspersky Password Manager export file')
+    argsParser.add_argument('-o', '--output_file', default='converted_passwords.csv', type=str, help='Custom CSV file name')
+
+    args = argsParser.parse_args()
+
+    file = args.input_file
+    documento = args.output_file
+
+    if file == None:
+        argsParser.print_help()
+        exit(1)
+    
     delimiter = ';'
     websiteslist = []
     applicationslist = []
@@ -154,7 +168,6 @@ def main():
 
     ''' csv '''
     '''Grupo'''
-    documento = 'converted_passwords.csv'
 
     fd = codecs.open(documento, 'wb', 'utf-8')
 
