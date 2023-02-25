@@ -1,0 +1,49 @@
+Websites
+
+Website name: Website
+Website URL: www.website.com
+Login name: Website
+Login: website
+Password: Password;
+Comment: This is a comment;
+
+---
+
+Website name: Website2
+Website URL: www.website2.com
+Login name: Website2
+Login: website2
+Password: Password;
+Comment: This is a comment;
+
+---
+
+Applications
+
+Application: My app
+Login name: MYAPP
+Login: AppID
+Password: Password;
+Comment: This is a comment;
+
+---
+
+Application: My app2
+Login name: MYAPP2
+Login: AppID2
+Password: Password;
+Comment: This is a comment;
+
+---
+
+Notes
+
+Name: Note
+Text: This is a note;
+
+---
+
+Name: Note 2
+Text: This is a note;
+
+---
