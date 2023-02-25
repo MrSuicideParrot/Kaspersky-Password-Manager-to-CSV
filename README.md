@@ -5,6 +5,7 @@ When you want to give up from Kaspersky Password Manager, you have a problem. Yo
 ## Features
 This program is capable of convert the passwords from the *Websites* and *Applications* section. 
 The *Notes* section is not exported.
+Conversion to nordpass csv format by @Xzenx86.
 
 ## How to use it
 ```
@@ -19,5 +20,7 @@ optional arguments:
                         Kaspersky Password Manager export file
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
                         Custom CSV file name
+  -n
+    Enable conversion for nordpass csv format
 ```
 
