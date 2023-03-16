@@ -51,7 +51,7 @@ def main():
     argsParser = ArgumentParser(description='Kaspersky Password Manager conveter to CSV')
     argsParser.add_argument('-i', '--input_file', help='Kaspersky Password Manager export file')
     argsParser.add_argument('-o', '--output_file', default='converted_passwords.csv', type=str, help='Custom CSV file name')
-    argsParser.add_argument('-n', '--nordpass', default=False, type=bool, help='Convert to NordPass CSV')
+    argsParser.add_argument('-n', '--nordpass', default=False, action='store_true', help='Convert to NordPass CSV')
 
     args = argsParser.parse_args()
 
